@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* FUENTES: 
+
+TITULOS: Bebas Neue
+SEMITITULOS: Roboto Condensed
+PARRAFOS: Cabin
+
+*/
+
+:root {
+    --colorB: rgb(0, 162, 255);
+    --colorW: white;
+    --titulos: "Bebas Neue";
+    --semititulos: "Roboto Condensed";
+    --parrafos: "Cabin";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* HEADER */
+
+/* MENU DE NAVEGACION */
+
+/* FONDO */
+.backNav {
+    /* background-image: url(img/campeonesblur3.jpg); */
+    background-image: url(img/campeonesblurAzul.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TITULO */
+.titulo {
+    font-family: var(--titulos);
+    color: var(--colorW);
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+}
+
+/* MENU DE NAVEGACION */
+.aNav {
+    text-decoration: none;
+    color: var(--colorW);
+    font-family: var(--semititulos);
+    font-size: 30px;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+
+}
+
+/* .menuNav {
+    padding: 50px;
+} */
+
+.aNav:hover {
+    background-color: var(--colorW);
+    color: var(--colorB);
+    font-size: 40px;
+    transition: 0.4s;
+}
+
+.liNav{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.ulNav {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* --------------------------------------------------------------------------- */
+/* MAIN */
+
+main {
+    background-color: var(--colorB);
+}
+
+/* HISTORIA */
+/* 
+.titulos {
+    font-family: "Bebas Neue";
+    color: rgb(255, 217, 0);
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    padding: 100px 0 100px 0;
+}
+
+.recor {
+    background-image: url(img/recorrido/recorrido.png);
+    background-size: 455px;
+} */
+
+.titulos {
+    font-family: var(--titulos);
+    color: var(--colorW);
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.recor img {
+    height: 60px;
+    width: auto;
+}
+
+.recor {
+    /* COLOR OPCIONAL */
+    /* background-color: rgb(255, 196, 0); */
+    background-color: var(--colorB);
+    background-position: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.partidos {
+    font-family: var(--titulos);
+    font-size: 35px;
+    padding: 10px;
+    color: var(--colorW);
+}
+
+.parrafos {
+    font-family: var(--titulos);
+    font-size: 30px;
+    padding: 0 10px 10px 10px;
+    color: var(--colorW);
+}
+
+.aMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divImg {
+    position: relative;
+}
+
+.divImg p {
+    font-family: var(--titulos);
+    font-size: 60px;
+    color: var(--colorW);
+    opacity: 0;
+    /* CENTRAR TEXTO EN LA IMAGEN */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+.divImg img {
+    transition: 0.6s;
+}
+
+.divImg:hover img{
+    filter: brightness(60%);
+}
+
+.divImg:hover p{
+    opacity: 100;
+}
+
+
+.imgMain {
+    border-radius: 30px;
+    height: 300px;
+    width: auto;
+}
+
+
+
+.divMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 35px;
+}
+
+.divMain .relleno {
+    padding: 0 100px;
+}
+
+
+
+/* PAISES */
+
+.backgroundAustralia {
+    background-image: url(img/recorrido/australiaBACK2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4% 10%;
+    border-bottom: 10px solid var(--colorB);
+}
+
+.backgroundPaisesbajos {
+    background-image: url(img/recorrido/paisesbajos2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4% 10%;
+    border-bottom: 10px solid var(--colorB);
+}
+
+.backgroundCroacia {
+    background-image: url(img/recorrido/croacia2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4% 10%;
+    border-bottom: 10px solid var(--colorB);
+}
+
+.backgroundFrancia {
+    background-image: url(img/recorrido/francia2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4% 10%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+/* JUGADORES */
+
+.jugadoresBACK {
+    background-image: url(img/jugadores/plantel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filaJugadores {
+    display: flex;
+    border-radius: 40px;
+    justify-content: space-evenly;
+}
+
+.filaJugadores img {
+    width: 30vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px 30px 0 0;
+    transition: 1s;
+}
+
+.filaJugadores h1 {
+    font-family: var(--titulos);
+    color: var(--colorW);
+    display: flex;
+    justify-content: center;
+}
+
+.jugadoresCART {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: var(--colorB);
+    margin: 60px;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+.jugadoresCART:hover {
+    filter: brightness(130%);
+
+}
+
+.jugadoresCART:hover img{
+    border-radius: 100px;
+    transition: 1s;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+/* FOOTER */
+
+.footer {
+    /* COLOR OPCIONAL */
+    /* background-color: rgb(255, 196, 0); */
+    background-color: var(--colorB);
+    background-position: center;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.github {
+    height: 40px;
+    width: auto;
+    fill: red;
+    transition: 0.6s;
+}
+
+.github:hover {
+    filter: brightness(70%);
+}
+
+.estrellitas {
+    height: 60px;
+}
+
+.infoFooter {
+    display: flex;
+}
+
+.nombre {
+    font-family: var(--titulos);
+    color: var(--colorW);
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.sep {
+    margin: 0 10px;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+
+/* .derecha {
+    position: fixed;
+    display: flex;
+    text-decoration: none;
+    color: var(--colorW);
+    background-color: var(--colorB);
+    padding: 10px;
+    border-radius: 10px;
+    font-family: var(--semititulos);
+    top: 48%;
+    bottom: 48%;
+    right: 2vh;
+    opacity: 30%;
+    transition: 0.6s;
+}
+
+.derecha:hover {
+    opacity: 100%;
+} */
